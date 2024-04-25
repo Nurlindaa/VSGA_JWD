@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--font link-->
+  <link rel="stylesheet" href="style.css">
+  <title>Wisata Pantai Bira</title>
+  
+</head>
+
+<style>
+.image-row {
+  width: 100%;
+}
+
+/* Styling the image */
+.main-picture {
+  width: 100%;
+  height: 120px;
+}
+
+/* Styling the clickable th elements */
+th {
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s; /* Adding transition effect */
+}
+
+/* Adding hover effect */
+th:hover {
+  background-color: #ac9842;
+  border: 1px solid #999; /* Add border on hover */
+}
+
+</style>
+
+<body>
+    <div class="container-fluid">
+    <table class="table table-borderless table-hover my-5">
+      <tbody>
+        <tr>
+          <td colspan="8">
+            <h1 class=>Selamat Datang Di Wisata Pantai Tanjung Bira</h1>
+          </td> 
+        </tr>
+        <tr>
+          <td colspan="8">
+            <!-- Menggunakan class "text-center" untuk membuat teks menjadi pusat -->
+            <img src="img/Pantai.jpeg" class="img-fluid mx-auto d-block" alt="Main Picture" style="width: 100%; height: auto;">
+          </td>
+        </tr>
+        <tr bgcolor="#ffcc00">
+          <th>Beranda</th>
+          <th>About</th>
+          <th>Objek Wisata</th>
+          <th>Fasilitas Wisata</th>
+          <th>Paket Wisata</th>
+          <th>Wisata Pulau</th>
+          <th>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ffcc00;">
+                Pemesanan
+              </button>              
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="form_pemesanan.php">Form Pemesanan</a></li>
+                  <li><a class="dropdown-item" href="daftar_pemesanan.php">Cek Pemesanan</a></li>
+                </ul>
+            </div>
+          </th>
+          <th>Galeri</th>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Kode gambar-->
+    <div class="card-group">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="img/appalarang.jpeg" class="card-img-top" alt="..." style="width: 400px; height: auto;">
+        <div class="card-body">
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+         <a> <h5 class="card-title"><strong>Tebing Apparalang: Daya Tarik, Harga Tiket dan Rute</strong></h5></a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="img/titiknol.jpeg" class="card-img-top" alt="..." style="width: 400px; height: auto;">
+        <div class="card-body">
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+             <h5 class="card-title"><strong>Panorama Titik Nol Kilometer di Ujung Kaki Sulawesi</strong></h5>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="card">
+        <div class="hstack gap-3 mb-3" style="height: 50px;">
+          <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
+          <button type="button" class="btn btn-secondary">cari</button>
+          <div class="vr"></div>
+        </div>
+        <div class="card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WfkYUpCQnFA" style="width: 200px; height: auto;"></iframe>
+          </div>
+          <div class="card-body">
+            <a href="https://youtu.be/WfkYUpCQnFA?si=uZXBq8Myt9PBaA6J" target="_blank">Link ke Video YouTube</a>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function pesanPaket() {
+        console.log("Pesan Paket clicked");
+        alert("Anda akan dialihkan untuk memesan paket wisata.");
+        // Tambahkan kode untuk dialihkan ke halaman pemesanan paket wisata
+      }
+
+      function cekPemesanan() {
+        console.log("Cek Pemesanan clicked");
+        alert("Anda akan dialihkan untuk mengecek pemesanan.");
+        // Tambahkan kode untuk dialihkan ke halaman cek pemesanan
+      }
+    </script>
+</body>
+</html>
